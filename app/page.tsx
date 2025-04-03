@@ -13,6 +13,7 @@ export default function Home() {
         className="rounded-lg shadow-lg"
 
     
-   </div>
+      />
+      </div>
   );
 }
