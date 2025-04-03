@@ -15,7 +15,7 @@ export default function Home() {
         <section>
           <h2 className="text-2xl font-bold mb-4">Understanding Next.js Basics</h2>
           <p className="mb-4">
-            This page demonstrates fundamental Next.js concepts. Let's break down the code:
+            This Vertex sciecne Point
           </p>
           <ol className="list-inside list-decimal text-sm/6 text-left font-[family-name:var(--font-geist-mono)]">
             <li className="mb-2 tracking-[-.01em]">
