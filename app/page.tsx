@@ -12,18 +12,48 @@ export default function Home() {
           height={38}
           priority
         />
-        <ol className="list-inside list-decimal text-sm/6 text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-[family-name:var(--font-geist-mono)] font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your Piyush vertex changes instantly.
-          </li>
-        </ol>
+        <section>
+          <h2 className="text-2xl font-bold mb-4">Understanding Next.js Basics</h2>
+          <p className="mb-4">
+            This page demonstrates fundamental Next.js concepts. Let's break down the code:
+          </p>
+          <ol className="list-inside list-decimal text-sm/6 text-left font-[family-name:var(--font-geist-mono)]">
+            <li className="mb-2 tracking-[-.01em]">
+              <strong>Components:</strong> We're creating a functional component called <code>Home</code>.
+            </li>
+            <li className="mb-2 tracking-[-.01em]">
+              <strong>JSX:</strong> The code inside the <code>return</code> statement is JSX, a syntax extension for JavaScript.
+            </li>
+            <li className="mb-2 tracking-[-.01em]">
+              <strong>Next.js Image:</strong> We're using the <code>Image</code> component from <code>next/image</code> for optimized image loading.
+            </li>
+            <li className="mb-2 tracking-[-.01em]">
+              <strong>Tailwind CSS:</strong> We're styling the page with Tailwind CSS utility classes.
+            </li>
+            <li className="mb-2 tracking-[-.01em]">
+              <strong>File-based Routing:</strong> This page is rendered because it's in <code>app/page.tsx</code>, demonstrating Next.js's file-based routing.
+            </li>
+            <li className="mb-2 tracking-[-.01em]">
+              <strong>Dynamic Content:</strong> The text "Piyush vertex changes" can be changed.
+            </li>
+          </ol>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-bold mb-4">Interactive Example</h2>
+          <p className="mb-4">
+            Try changing the text below and see the changes reflected instantly:
+          </p>
+          <input
+            type="text"
+            className="border p-2 rounded"
+            placeholder="Enter your text here"
+            onChange={(e) => {
+              // You can add logic here to update the text dynamically
+              console.log(e.target.value);
+            }}
+          />
+        </section>
 
         <div className="flex gap-4 items-center flex-col sm:flex-row">
           <a
